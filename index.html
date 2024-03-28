@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu vertical</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--nav sirve para guardar urls-->
+  <nav>
+        <div class="mobile">
+            <div class="header">
+                 <div class="logo">logo</div>
+                 <div class="more"><button id="bMore"><span class="material-icons">
+                    menu
+                    </span></button></div>   
+             </div>
+        <div id="links" class="links">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.tiktok.com/">tiktok</a>
+            <a href="https://www.instagram.com/">instagram</a> 
+            <a href="#">search</a>
+            <a href="#">sign up</a>
+            <a href="#">login</a>
+        </div>
+         </div>
+        <div class="desktop">
+            <div class="logo">logo</div>
+            <div class="primary">
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.tiktok.com/">tiktok</a>
+                <a href="https://www.instagram.com/">instagram</a>   
+            </div>
+            <div class="secondary full">
+                <a href="#">search</a>
+                <a href="#">sign up</a>
+                <a href="#">login</a> 
+            </div>
+            <div class="secondary mini">
+                <a href="#" class="more">More</a>
+                <div class="submenu">
+                    <a href="#">search</a>
+                    <a href="#">sign up</a>
+                    <a href="#">login</a>   
+                </div>
+            </div>
+        </div>
+  </nav>
+  <script>
+    constbMore = document.querySelector('#bMore')
+    const links=document.querySelector('#links')
+    
+    bMore.addEventListener('click', e =>{
+        links.classList.toggle('colapsed')
+     })
+  </script>  
+</body>
+</html>
